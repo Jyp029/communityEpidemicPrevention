@@ -1,0 +1,12 @@
+.weui-cell {
+  padding: 12rpx;
+}
+
+.weui-label {
+  font-size: 34rpx;
+}
+
+.sign-padding {
+  padding-top: 50rpx;
+  padding-left: 12rpx;
+}

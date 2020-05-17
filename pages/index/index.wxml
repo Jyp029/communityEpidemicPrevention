@@ -1,13 +1,8 @@
-<!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="con-view">
+    <view bindtap="sign" hover-class="hover_class" hover-start-time="50" class="v-top">每日签到</view>
+    <text>请如实填写每日健康状态</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <view bindtap="alienReg" class="v-top">外来人员登记</view>
+  <view bindtap="announcement" class="v-top">社区公告</view>
 </view>

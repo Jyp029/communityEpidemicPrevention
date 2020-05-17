@@ -1,0 +1,154 @@
+<!-- 问答社区头部 -->
+<!-- <view>
+  <view class="view-rebang">热榜</view>
+  <view class="view-tuijian">推荐</view>
+</view> -->
+<!-- 问答社区内容区域 -->
+<view>
+<!-- 监听自定义事件 -->
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+      <view class="rebang">
+        <navigator class="comm_list" bindtap="toQuestionDetail">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view>
+              <view class="paihangbang">1</view>
+              <view class="comm_hot">热度:73万</view>
+            </view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数:123</view>
+            <view class="answers">回答数:35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view>
+              <view class="paihangbang">2</view>
+              <view class="comm_hot">热度:73万</view>
+            </view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view>
+              <view class="paihangbang">3</view>
+              <view class="comm_hot">热度:73万</view>
+            </view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view class="comm_hot">热度：23万</view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view class="comm_hot">热度：23万</view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view class="comm_hot">热度：23万</view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view class="comm_hot">热度：23万</view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+        <navigator class="comm_list">
+          <view class="comm-img">
+            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+          </view>
+          <view class="comm-container">
+            <view class="comm_hot">热度：23万</view>
+            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+          </view>
+          <view class="navigator-bottom">
+            <view class="followed">关注数：123</view>
+            <view class="answers">回答数：35</view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+      <view class="question-tuijian">
+        <view class="question-title">美国是不是要凉了？</view>
+        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+      </view>
+    </block>
+  </Tabs>
+</view>

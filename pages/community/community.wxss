@@ -1,0 +1,100 @@
+/* pages/community/community.wxss */
+.view-rebang {
+  display: inline-block;
+  background-color: white;
+  line-height: 75rpx;
+  text-align: center;
+  width: 376rpx;
+  height: 75rpx;
+  float: left;
+  border-bottom: 1px solid rgb(240, 235, 235);
+}
+.view-tuijian {
+  display: inline-block;
+  background-color: white;
+  line-height: 75rpx;
+  text-align: center;
+  width: 375rpx;
+  height: 75rpx;
+  float: right;
+  border-bottom: 1px solid rgb(240, 235, 235);
+}
+
+.view-rebang:hover {
+  background-color: rgb(78, 197, 72);
+}
+
+.view-tuijian:hover {
+  background-color: rgb(78, 197, 72);
+}
+
+navigator {
+  height: 195rpx;
+  margin: 6rpx 20rpx 25rpx 25rpx;
+}
+
+.comm-list {
+
+}
+
+.comm-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 150rpx;
+  float: right;
+}
+
+image {
+  margin-top: 50rpx;
+}
+
+.comm_hot {
+  display: inline-block;
+  margin-left: 6rpx;
+  font-size: 35rpx;
+  color: rgb(51, 51, 221);
+  font-weight: 500;
+}
+
+.paihangbang {
+  display: inline-block;
+  font-size: 35rpx;
+  color: rgb(214, 66, 66);
+  font-weight: 500;
+}
+
+.comm_content {
+  line-height: 50rpx;
+}
+
+.navigator-bottom {
+  padding-bottom: 6rpx;
+  border-bottom: 3rpx solid rgb(238, 237, 231);
+}
+
+.followed {
+  display: inline-block;
+}
+
+.answers {
+  display: inline-block;
+  margin-left: 15rpx;
+}
+
+.question-tuijian {
+  color: black;
+  margin: 10px auto;
+  width: 720rpx;
+  background-color: rgba(241, 247, 244, 0.94);
+  height: 200rpx;
+  line-height: 50rpx;
+  border-radius: 15rpx;
+  box-shadow: 0px 5px 5px #eeebeb;
+}
+
+.question-title {
+  text-align: left;
+  font-size: large;
+}

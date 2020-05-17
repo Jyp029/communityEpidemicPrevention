@@ -1,10 +1,18 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+/* 
+1.引入字体图标库，全局都可以直接使用了
+2.小程序中不支持通配符*
+*/
+@import './styles/iconfont.wxss';
+@import './weui.wxss';
+@import "./wxParse/wxParse.wxss";
+page,view,text,swiper,swiper-item,image,navigator {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-} 
+}
+
+page {
+  /* 定义同一样式，该变量在别的样式中使用：color:var(--conColor) 即可使用该样式颜色 */
+  --conColor: #445deb;
+  font-size: 28rpx;
+}

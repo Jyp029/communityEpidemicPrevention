@@ -1,0 +1,128 @@
+<view>
+  <view class="answer_title">
+    你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？
+  </view>
+  <view class="answer_desc">
+    你觉着美国疫情会发达到多少人？美国还能挺多久？
+    你觉着美国疫情会发展成.什么样的规模，回展成什么!样的规模，回达到多少人？美国还能挺多久？
+    你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？
+  </view>
+  <view class="titleButtom">
+    <button class="attension">关注问题</button>
+    <button class="writeAns">写回答</button>
+  </view>
+  <view class="rebang">
+    <navigator class="comm_list" bindtap="toAnswerContent">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <!-- <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image> -->
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+   <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+    <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+    <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+    <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+    <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+    <navigator class="comm_list" bindtap="toQuestionDetail">
+      <view class="comm-container">
+        <view>
+          <view class="paihangbang">头像</view>
+          <view class="comm_hot">用户名</view>
+        </view>
+        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+      </view>
+      <view class="navigator-bottom">
+        <view class="followed">123 赞同</view>·
+        <view class="answers">17 评论</view> ·
+        <view class="answers">21 喜欢</view> ·
+        <view class="answers">一个小时前</view>
+      </view>
+    </navigator>
+  </view>
+</view>

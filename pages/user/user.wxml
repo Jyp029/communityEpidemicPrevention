@@ -1,0 +1,4 @@
+<!--pages/user/user.wxml-->
+<text>用户详情页</text>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>

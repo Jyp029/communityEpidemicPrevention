@@ -1,13 +1,43 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/community/community",
+    "pages/user/user",
+    "pages/signDay/signDay",
+    "pages/AlienRegister/AlienRegister",
+    "pages/announce/announce",
+    "pages/login/login",
+    "pages/questDetail/questDetail",
+    "pages/answerContent/answerContent"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "疫情防控社区",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/home-active.png"
+    },{
+      "pagePath": "pages/community/community",
+      "text": "问答",
+      "iconPath": "icons/message.png",
+      "selectedIconPath": "icons/message-active.png"
+    },{
+      "pagePath": "pages/login/login",
+      "text": "我的",
+      "iconPath": "icons/profile.png",
+      "selectedIconPath": "icons/profile-active.png"
+    }]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
