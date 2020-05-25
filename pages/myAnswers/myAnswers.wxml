@@ -1,0 +1,20 @@
+<view>
+	<view class="question-tuijian" bindtap="toQuestionDetail">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+	</view>
+</view>

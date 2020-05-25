@@ -1,128 +1,34 @@
 <view>
   <view class="answer_title">
-    你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？
+    <rich-text nodes="{{qTitle}}"></rich-text>
   </view>
-  <view class="answer_desc">
-    你觉着美国疫情会发达到多少人？美国还能挺多久？
-    你觉着美国疫情会发展成.什么样的规模，回展成什么!样的规模，回达到多少人？美国还能挺多久？
-    你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？
+  问题描述：<view class="answer_desc">
+    <rich-text nodes="{{qDesc}}"></rich-text>
   </view>
   <view class="titleButtom">
-    <button class="attension">关注问题</button>
-    <button class="writeAns">写回答</button>
+    <button class="attension" bindtap="toFolloweduestion" wx:if="{{isFollowed}}">取消关注</button>
+    <button class="attension" bindtap="toFolloweduestion" wx:else>关注问题</button>
+
+    <button class="writeAns" bindtap="toWriteAnswer" wx:if="{{isAnswered != true}}">写回答</button>
+    <button class="writeAns" bindtap="toLookAnswer" wx:else>去查看回答</button>
   </view>
+	<view class="hr"></view>
   <view class="rebang">
-    <navigator class="comm_list" bindtap="toAnswerContent">
+   <navigator class="comm_list" bindtap="toAnswerContent" data-id="{{item.id}}" wx:if="{{answersList.length != 0}}" wx:for="{{answersList}}" wx:key="id">
       <view class="comm-container">
         <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
+          <!-- <view class="paihangbang">头像</view> -->
+          <view class="comm_hot">{{item.nickName}}·发布于{{item.time}}</view>
         </view>
         <!-- <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image> -->
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+        <view class="comm_content"><rich-text nodes="{{item.content}}"></rich-text></view>
       </view>
       <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
+        <view class="followed">{{item.agree}} 赞同</view>
+        <!-- <view class="answers">17 评论</view> -->
+        <view class="answers">{{item.like}} 喜欢</view>
       </view>
     </navigator>
-   <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
-    <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
-    <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
-    <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
-    <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
-    <navigator class="comm_list" bindtap="toQuestionDetail">
-      <view class="comm-container">
-        <view>
-          <view class="paihangbang">头像</view>
-          <view class="comm_hot">用户名</view>
-        </view>
-        <image class="comm-img" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-        <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-      </view>
-      <view class="navigator-bottom">
-        <view class="followed">123 赞同</view>·
-        <view class="answers">17 评论</view> ·
-        <view class="answers">21 喜欢</view> ·
-        <view class="answers">一个小时前</view>
-      </view>
-    </navigator>
+    <view wx:if="{{answersList.length == 0}}" style="font-size: 40rpx; color: red; alien-center:center;margin-top: 50rpx; margin-left:260rpx">快来占座吧！</view>
   </view>
 </view>

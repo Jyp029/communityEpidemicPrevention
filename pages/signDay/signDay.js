@@ -1,25 +1,42 @@
 // pages/signDay/signDay.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: "2016-09-01",
-    checkboxItems: [
+    healthItems: [
       {name: '健康', value: '0', checked: true},
       {name: '疑似病例', value: '1'},
       {name: '确诊病例', value: '2'}
     ],
-    radioItems: [
-      {name: '男', value: '0', checked: true},
-      {name: '女', value: '1'}
-    ]
+    address: '',
+    health: ''
   },
 
-  bindDateChange: function (e) {
+  bindHealthChange: function (e) {
     this.setData({
-        date: e.detail.value
+      health: e.detail.value
+    });
+    console.log(this.data.health);
+  },
+
+  commSign: function() {
+    console.log(health);
+    var that = this;
+    wx.request({
+      url: app.globalData.API + '/user/sign', 
+      data: {
+        health: health
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success (res) {
+        console.log(res.data)
+        
+      }
     })
   },
 

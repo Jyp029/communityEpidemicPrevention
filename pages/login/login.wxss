@@ -19,7 +19,7 @@ page{
 .login-icon{
   flex: none;
   margin: 0 auto;
-  margin-top: 200rpx;
+  margin-top: 100rpx;
 }
 .login-img{
   width: 240rpx;
@@ -69,10 +69,29 @@ page{
   border: 0.1rpx solid #ccc;
   border-radius: 40rpx;
 }
+
+.regBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 45rpx;
+  margin-top: 15px;
+  color: #fff;
+  background-color:#6af398;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+}
  
  
-.nameImage, .keyImage {
+.idCardImage {
   margin-right: 10px;
-  width: 14px;
-  height: 14px
+  margin-bottom: 14rpx;
+  width: 24px;
+  height: 18px
+}
+
+.passWordImage {
+  margin-right: 10px;
+  margin-bottom: 14rpx;
+  width: 24px;
+  height: 24px
 }

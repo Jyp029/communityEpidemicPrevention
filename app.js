@@ -32,5 +32,9 @@ App({
    */
   onPageNotFound: function(options) {
 
+  },
+  globalData: {
+    html: "",
+    API: "http://localhost:8689"
   }
 });

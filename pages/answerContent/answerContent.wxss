@@ -30,7 +30,6 @@ image {
 
 .answer_content {
   font-size: 28rpx;
-  line-height: 45rpx;
 }
 
 .navigator-bottom {

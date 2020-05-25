@@ -1,2 +1,17 @@
-<!--pages/announce/announce.wxml-->
-<text>社区公告页</text>
+<view class="item-two">
+	<block wx:for="{{announList}}" wx:key="id">
+		<view class='timeline'>
+			<view class='circle'></view>
+			<view class='timeline-content'>
+				<view class="ss" wx:if="{{item.type < 2}}">
+					<view class='remark' style="color: red"> {{item.content}}</view>
+					<view class='created-at' style="color: red">{{item.post_time}}</view>
+				</view>
+				<view class="ss" wx:else>
+					<view class='remark'> {{item.content}}</view>
+					<view class='created-at'>{{item.post_time}}</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>

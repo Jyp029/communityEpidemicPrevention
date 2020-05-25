@@ -29,7 +29,7 @@
 }
 
 navigator {
-  height: 195rpx;
+  height: 260rpx;
   margin: 6rpx 20rpx 25rpx 25rpx;
 }
 
@@ -88,7 +88,7 @@ image {
   margin: 10px auto;
   width: 720rpx;
   background-color: rgba(241, 247, 244, 0.94);
-  height: 200rpx;
+  height: 100%;
   line-height: 50rpx;
   border-radius: 15rpx;
   box-shadow: 0px 5px 5px #eeebeb;

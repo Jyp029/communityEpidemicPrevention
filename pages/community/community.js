@@ -1,4 +1,5 @@
 // pages/community/community.js
+const app = getApp()
 Page({
 
   /**
@@ -16,7 +17,8 @@ Page({
         value: "推荐",
         isActive: false
       }
-    ]
+    ],
+    hotQuestionList: []
   },
 
   handleTabsItemChange(e) {
@@ -28,17 +30,54 @@ Page({
     });
   },
 
-  toQuestionDetail: function () {
+  toQuestionDetail: function (e) {
+    console.log(e.currentTarget.dataset.id)
     wx.navigateTo({
-      url: '../../pages/questDetail/questDetail'
+      url: '../../pages/questDetail/questDetail?id=' + e.currentTarget.dataset.id
     })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function () {
+    this.initCommunityQueList();
+  },
 
+  initCommunityQueList: function() {
+    console.log("start init community questions list.")
+    var that = this;
+    wx.request({
+      url: app.globalData.API + '/hotQuestion/list',
+      header: {
+        'content-type': 'application/json', // 默认值
+        'Cookie': wx.getStorageSync('cookies')
+      },
+      success(res) {
+        console.log(res)
+        that.setData({
+          hotQuestionList: res.data.result
+        })
+        if(res.data.code == 98) {
+          wx.removeStorageSync('card_id');
+          wx.removeStorageSync('cookies');
+          wx.removeStorageSync('nick_name');
+          wx.removeStorageSync('id');
+          wx.showToast({
+            title: res.data.message,
+            icon: "none",
+            duration: 1000
+          })
+          wx.navigateTo({
+            url: '../login/login',
+          })
+          return;
+        }
+      },
+      fail(err){
+        console.log(err)
+      }
+    })
   },
 
   /**
@@ -73,7 +112,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log("user pull to refresh.")
+    this.initCommunityQueList();
   },
 
   /**

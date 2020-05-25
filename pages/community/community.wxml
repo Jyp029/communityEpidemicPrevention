@@ -1,127 +1,26 @@
-<!-- 问答社区头部 -->
-<!-- <view>
-  <view class="view-rebang">热榜</view>
-  <view class="view-tuijian">推荐</view>
-</view> -->
-<!-- 问答社区内容区域 -->
 <view>
 <!-- 监听自定义事件 -->
   <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
     <block wx:if="{{tabs[0].isActive}}">
       <view class="rebang">
-        <navigator class="comm_list" bindtap="toQuestionDetail">
+        <navigator class="comm_list" bindtap="toQuestionDetail" data-id="{{item.id}}"
+           wx:if="{{hotQuestionList.length != 0}}" wx:for="{{hotQuestionList}}" wx:key="id">
           <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
+            <image mode="widthFix" src=""></image>
           </view>
           <view class="comm-container">
             <view>
               <view class="paihangbang">1</view>
-              <view class="comm_hot">热度:73万</view>
+              <view class="comm_hot">热度:{{item.hot}}万</view>
             </view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
+            <view class="comm_content">{{item.title}}</view>
           </view>
           <view class="navigator-bottom">
-            <view class="followed">关注数:123</view>
-            <view class="answers">回答数:35</view>
+            <view class="followed" >关注数:{{item.followed}}</view>
+            <view class="answers">回答数:{{item.nums}}</view>
           </view>
         </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view>
-              <view class="paihangbang">2</view>
-              <view class="comm_hot">热度:73万</view>
-            </view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view>
-              <view class="paihangbang">3</view>
-              <view class="comm_hot">热度:73万</view>
-            </view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view class="comm_hot">热度：23万</view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view class="comm_hot">热度：23万</view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view class="comm_hot">热度：23万</view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view class="comm_hot">热度：23万</view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
-        <navigator class="comm_list">
-          <view class="comm-img">
-            <image mode="widthFix" src="https://pics.images.ac.cn/image/5eaea06760eb3.html"></image>
-          </view>
-          <view class="comm-container">
-            <view class="comm_hot">热度：23万</view>
-            <view class="comm_content">你觉着美国疫情会发展成什么样的规模，回达到多少人？美国还能挺多久？</view>
-          </view>
-          <view class="navigator-bottom">
-            <view class="followed">关注数：123</view>
-            <view class="answers">回答数：35</view>
-          </view>
-        </navigator>
+        <view wx:if="{{hotQuestionList.length == 0}}" style="font-size: 40rpx; color: red; alien-center:center;margin-top: 50rpx; margin-left:260rpx">暂无热榜</view>
       </view>
     </block>
     <block wx:elif="{{tabs[1].isActive}}">
@@ -130,24 +29,24 @@
         <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
       </view>
       <view class="question-tuijian">
-        <view class="question-title">美国是不是要凉了？</view>
-        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+        <view class="question-title">疫情之下有哪些防护措施？</view>
+        <view>1.尽量不要出门   2.尽量是房屋能够通风  3.出门的话一定要戴口罩  4.一定要带上免洗手消毒液，随时进行消毒  5.与他人进行一定距离的隔离，防止病毒的传播   6.按照标准的方式打喷嚏</view>
       </view>
       <view class="question-tuijian">
-        <view class="question-title">美国是不是要凉了？</view>
-        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+        <view class="question-title">疫情的拐点大概何时会出现？拐点的高度将是多少？</view>
+        <view>目前拐点还未出现，具体的出现时间将是何时，还有待数据的处理才能得出结果！</view>
       </view>
       <view class="question-tuijian">
-        <view class="question-title">美国是不是要凉了？</view>
-        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+        <view class="question-title">中国政府目前采取了哪些措施来防止疫情的扩散？</view>
+        <view>1.封锁主要的高速公路和铁路  2.所有非必须生产企业全部停工   3.每个人都尽量不要出门  4.出入公共场所需要配合健康码和体温测量  5.不要聚集，否则以违法处理</view>
       </view>
       <view class="question-tuijian">
-        <view class="question-title">美国是不是要凉了？</view>
-        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+        <view class="question-title">社区将会采取什么样的措施来保证社区居民的安全？以及如何防范外来人员的病原体引入？</view>
+        <view>1.严谨在社区公共场所聚集  2.所有非必须生产企业全部停工   3.每个人都尽量不要出门  4.出入公共场所需要配合健康码和体温测量  5.关闭社区所有的娱乐场所</view>
       </view>
       <view class="question-tuijian">
-        <view class="question-title">美国是不是要凉了？</view>
-        <view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+        <view class="question-title">个人应该做哪些工作来帮助社区减轻疫情状况？</view>
+        <view>1.进个人所能捐献严重地区所缺物品和资金  2.遵守国家的政策  3.遵守社区规定</view>
       </view>
     </block>
   </Tabs>

@@ -1,8 +1,21 @@
+<swiper autoplay interval="2500" circular duration="1000">
+	<swiper-item>
+		<image mode="widthFix" src="http://192.168.25.1:8689/images/kexuefangzhi_lunbo.png" />
+	</swiper-item>
+	<swiper-item>
+		<image mode="widthFix" src="http://192.168.25.1:8689/images/congwozuoqi_lunbo.png" />
+	</swiper-item>
+  <swiper-item>
+		<image mode="widthFix" src="http://192.168.25.1:8689/images/yiqingfangkong_lunbo.png" />
+	</swiper-item>
+</swiper>
 <view class="container">
-  <view class="con-view">
-    <view bindtap="sign" hover-class="hover_class" hover-start-time="50" class="v-top">每日签到</view>
+  <view class="con-view" bindtap="sign">
+    <view hover-class="hover_class" hover-start-time="50" class="v-top">每日签到</view>
     <text>请如实填写每日健康状态</text>
   </view>
-  <view bindtap="alienReg" class="v-top">外来人员登记</view>
+  <view bindtap="alienReg" class="v-top">人员信息登记</view>
   <view bindtap="announcement" class="v-top">社区公告</view>
+	<view bindtap="healthStatus" class="v-top">健康状态</view>
+	<view bindtap="postQuestion" class="v-top">提出问题</view>
 </view>

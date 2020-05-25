@@ -1,0 +1,28 @@
+<!--pages/myFollowed/myFollowed.wxml-->
+<text>pages/myFollowed/myFollowed.wxml</text>
+<view>
+	<view class="question-tuijian" bindtap="toQuestionDetail">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+	<view class="question-tuijian">
+		<view class="question-title">美国是不是要凉了？</view>
+		<view>美国疫情不断严重，不知道美国是否还能坚持得住？美国要是全国感染那世界将是什么样的格局？</view>
+	</view>
+</view>

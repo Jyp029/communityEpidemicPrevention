@@ -1,5 +1,7 @@
 .weui-cell {
-  padding: 12rpx;
+  padding: 8rpx;
+  font-weight: 500;
+  color: red;
 }
 
 .weui-label {

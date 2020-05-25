@@ -1,0 +1,23 @@
+/* pages/healthStatus/healthStatus.wxss */
+.codeImage {
+  margin-left: 90rpx;
+  width: 550rpx;
+  height: 550rpx;
+}
+
+.text1 {
+  text-align: center;
+  font-size: x-large;
+  margin: 115rpx 0 20rpx;
+}
+
+.currentTime {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.username {
+  font-size: xx-large;
+  text-align: center;
+  margin: 20rpx;
+}

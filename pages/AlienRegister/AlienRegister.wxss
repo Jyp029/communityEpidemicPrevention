@@ -1,1 +1,32 @@
-/* pages/AlienRegister/AlienRegister.wxss */
+.weui-cell {
+  padding: 12rpx;
+}
+
+.weui-label {
+  font-size: 34rpx;
+}
+
+.sign-padding {
+  padding-top: 50rpx;
+  padding-left: 12rpx;
+  font-weight: 500;
+  color: red;
+}
+
+/*按钮*/
+.loginBtnView {
+  margin-top: 0px;
+  margin-bottom: 35rpx;
+  padding-bottom: 0px;
+}
+ 
+.loginBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 45rpx;
+  margin-top: 35px;
+  color: #fff;
+  background-color:#7e8ef0;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+}

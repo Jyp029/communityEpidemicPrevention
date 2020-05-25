@@ -1,0 +1,15 @@
+.question-tuijian {
+  color: black;
+  margin: 10px auto;
+  width: 720rpx;
+  background-color: rgba(241, 247, 244, 0.94);
+  height: 200rpx;
+  line-height: 50rpx;
+  border-radius: 15rpx;
+  box-shadow: 0px 5px 5px #eeebeb;
+}
+
+.question-title {
+  text-align: left;
+  font-size: large;
+}

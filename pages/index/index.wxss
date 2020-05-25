@@ -1,7 +1,7 @@
 .container {
   margin: auto;
   line-height: 50rpx;
-  padding-top: 100rpx;
+  padding-top: 20rpx;
   font-size: 40rpx;
 }
 .con-view {
@@ -30,3 +30,20 @@ text {
   color: red;
   background-color: green;
 }
+
+/**
+轮播图开始
+*/
+text {
+  color: red;
+}
+swiper {
+  width: 100%;
+  height: calc(100vw * 352 / 1125);
+}
+image {
+  width: 100%;
+}
+/**
+轮播图结束  
+*/

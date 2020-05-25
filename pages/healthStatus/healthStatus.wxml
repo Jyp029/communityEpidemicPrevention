@@ -1,0 +1,10 @@
+<!--pages/clock/clock.wxml-->
+<view style="display: {{flag}};">
+	<view class="text1">北京时间</view>
+	<view class="currentTime">{{currentYear}}</view>
+  <view class="currentTime">{{currentHour}}</view>
+</view>
+
+
+<image class="codeImage" src="{{codePath}}"></image>
+<view class="username">{{username}}</view>
